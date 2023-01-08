@@ -37,4 +37,33 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         }
     }
+
+    let products = document.querySelectorAll(".add-to-cart");
+    let cart = document.querySelectorAll(".cart-number");
+    let addMore = document.querySelectorAll(".add-more");
+    
+    let index = 0;
+    let num = 0;
+
+    
+
+
+    products.forEach(product => {
+        addMore.forEach(addMoreItem => {
+            product.addEventListener("click", ()=>{
+                num++;
+                addMoreItem.classList.remove("d-none");
+                product.classList.toggle("d-none");
+                cart[0].innerHTML = num;
+            })
+        })
+        
+    });
+
+
+
+
+
+
+    
 });
