@@ -7,6 +7,12 @@
   top: 10px;
 }
 
+.shop-logo-offc-mobile {
+  position: relative;
+  top: -14px;
+  margin-left: 7px;
+}
+
 .debug-ol {
   outline: dashed red;
 }
